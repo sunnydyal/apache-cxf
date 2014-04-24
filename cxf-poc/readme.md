@@ -1,4 +1,4 @@
-## Working [SOAP Service](https://github.com/sunnydyal/cxf-poc)
+## Working [SOAP Service](https://github.com/sunnydyal/apache-cxf/tree/master/cxf-poc)
 
 1. It is a repository of uniquely experimented Apache CXF demos; written by <a href="http://www.insonix.com">Insonix (Sunny Dyal)</a>!
 2. Requirements: JDK1.7, Tomcat 7, Maven 3.x
