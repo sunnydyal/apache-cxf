@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Logger;
 
 import javax.jws.WebService;
 
@@ -33,6 +34,8 @@ import com.insonix.cxf.model.Person;
  */
 @WebService(endpointInterface = "com.insonix.cxf.PersonService", serviceName = "PersonService")
 public class PersonServiceImpl implements PersonService {
+  
+  private static final Logger LOG = Logger.getLogger(PersonServiceImpl.class.getName());
   Map<String, Person> moPerson;
 
   public PersonServiceImpl() {
@@ -47,20 +50,24 @@ public class PersonServiceImpl implements PersonService {
 
   @Override
   public List<Person> getAll() {
+    LOG.info("Getting all persons");
     return new ArrayList<Person>(moPerson.values());
   }
 
   @Override
   public Person getPerson(Integer personId) {
+    LOG.info("Getting Person with " + personId);
     return moPerson.get(personId+"");
   }
 
   @Override
   public void addPerson(Person person) {
+    LOG.info("Adding a new person...");
     if(person!=null) {
       int id = moPerson.size()+1;
       person.setId(id);
       moPerson.put(id+"", person);
+      LOG.info("New person has been added successfully.");
     }
   }
   

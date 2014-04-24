@@ -54,7 +54,7 @@
 			<artifactId>cxf-rt-transports-http-jetty</artifactId>
 			<version>${cxf.version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
@@ -123,6 +123,8 @@
 					</includes>
 				</configuration>
 			</plugin>
+
+
 		</plugins>
 	</build>
 	<licenses>

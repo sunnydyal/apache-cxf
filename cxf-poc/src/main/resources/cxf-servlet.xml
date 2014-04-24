@@ -16,4 +16,8 @@
 
 	<jaxws:endpoint id="personService"
 		implementor="com.insonix.cxf.impl.PersonServiceImpl" address="/person" />
+		
+	<jaxws:client id="personClient"
+                  serviceClass="com.insonix.cxf.PersonService"
+                  address="http://insonix-cxf.sunnydyal.cloudbees.net/services/person" />
 </beans>
