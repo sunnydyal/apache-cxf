@@ -7,6 +7,10 @@
 5. <a href="http://insonix-cxf.sunnydyal.cloudbees.net/site/index.html">Maven Site</a>
 
 =
+### General Web Service Application Architecture
+
+<img src="http://insonix-cxf.sunnydyal.cloudbees.net/wsarc.png" />
+=
 
 ### Libraries
 
